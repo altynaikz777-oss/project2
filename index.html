@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        background: url("pattern-background-desktop.svg") no-repeat center top;
+        background-color: hsl(225, 100%, 94%);
+      }
+      .button {
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        width: 350px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        box-shadow: 0px 15px 20px hsl(229, 70%, 88%);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        background-color: white;
+        width: 450px;
+        margin-top: 40px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        height: 650px;
+        min-height: 100vh;
+        border-radius: 10px;
+      }
+      .background {
+        border-radius: 20px;
+      }
+      .main {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: center;*/
+        align-items: center;
+        background-color: hsl(225, 100%, 98%);
+        width: 350px;
+        height: 100px;
+        justify-content: space-evenly;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+
+      .text {
+        font-size: 18px;
+        color: grey;
+      }
+      .olx {
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .grey {
+        color: grey;
+        font-family: sans-serif;
+        margin-bottom: 55px;
+        margin-top: 25px;
+        background-color: none;
+        font-size: medium;
+      }
+
+      .meow {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: -200px;
+        margin-top: -200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="olx">
+        <img src="illustration-hero.svg" />
+        <h1>Order Summary</h1>
+        <p class="text">
+          You can now listen to millions of songs,<br />
+          audiobooks, and podcasts on any device <br />anywhere you like!
+        </p>
+        <div class="main">
+          <img src="icon-music.svg" />
+          <div class="cherry">
+            <strong>Annual Plan</strong>
+            <br />$59.99/year
+          </div>
+          <div>
+            <a href="#">Change</a>
+          </div>
+        </div>
+      </div>
+      <div class="meow">
+        <button class="button"><h3>Proceed to Payment</h3></button>
+        <button class="grey">Cancel Order</button>
+      </div>
+    </div>
+  </body>
+</html>
